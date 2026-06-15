@@ -1,3 +1,0 @@
-/mnt/c/Users/Shreyo Pal/Documents/Coding/C++/todo-app/build/CMakeFiles/todoTerm.dir
-/mnt/c/Users/Shreyo Pal/Documents/Coding/C++/todo-app/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/Shreyo Pal/Documents/Coding/C++/todo-app/build/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <cstring>
 #include <iostream>
 #include <fstream>
@@ -98,3 +99,8 @@ int main() {
 
     return 1;
 }
+=======
+#include <app-state.hpp>
+#include <io.hpp>
+#include <ui-comp.hpp>
+>>>>>>> 8f6ad69 (Added file handling and backend logic)

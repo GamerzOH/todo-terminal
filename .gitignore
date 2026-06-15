@@ -1,1 +1,6 @@
 testing/
+devdocs/
+_deps/
+build/
+.cache/
+CMakeFiles/
