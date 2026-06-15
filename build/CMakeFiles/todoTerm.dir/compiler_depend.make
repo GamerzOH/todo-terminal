@@ -75,6 +75,7 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o: /mnt/c/Users/Shreyo\ Pal/Documents/Codin
   /usr/include/c++/14/cstddef \
   /usr/include/c++/14/cstdio \
   /usr/include/c++/14/cstdlib \
+  /usr/include/c++/14/cstring \
   /usr/include/c++/14/cwchar \
   /usr/include/c++/14/cwctype \
   /usr/include/c++/14/debug/assertions.h \
@@ -118,6 +119,8 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o: /mnt/c/Users/Shreyo\ Pal/Documents/Codin
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
@@ -354,6 +357,12 @@ todoTerm: /lib/x86_64-linux-gnu/libc.so.6 \
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
@@ -375,8 +384,6 @@ todoTerm: /lib/x86_64-linux-gnu/libc.so.6 \
 /usr/include/c++/14/bits/stl_construct.h:
 
 /usr/include/c++/14/bits/memoryfwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
 
@@ -562,6 +569,8 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 
 /usr/include/c++/14/cstdio:
 
+/usr/include/c++/14/iosfwd:
+
 /usr/include/c++/14/debug/assertions.h:
 
 /usr/include/c++/14/ext/alloc_traits.h:
@@ -592,14 +601,6 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 
 /usr/include/linux/errno.h:
 
-/usr/include/c++/14/iosfwd:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/c++/14/bits/requires_hosted.h:
-
-/usr/include/c++/14/iostream:
-
 /usr/include/linux/sched/types.h:
 
 /usr/include/c++/14/bits/basic_string.tcc:
@@ -611,6 +612,8 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 /usr/include/c++/14/bits/charconv.h:
 
 /usr/include/c++/14/cwchar:
+
+/usr/include/c++/14/cstring:
 
 /usr/include/c++/14/stdexcept:
 
@@ -648,15 +651,7 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 
 /usr/include/stdlib.h:
 
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/wctype.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
@@ -666,6 +661,20 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/c++/14/bits/requires_hosted.h:
+
+/usr/include/c++/14/iostream:
+
+/usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/wctype.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
