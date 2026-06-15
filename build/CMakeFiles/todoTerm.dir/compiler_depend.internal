@@ -13,6 +13,7 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o
  /usr/include/c++/14/backward/binders.h
  /usr/include/c++/14/bit
  /usr/include/c++/14/bits/alloc_traits.h
+ /usr/include/c++/14/bits/allocated_ptr.h
  /usr/include/c++/14/bits/allocator.h
  /usr/include/c++/14/bits/basic_ios.h
  /usr/include/c++/14/bits/basic_ios.tcc
@@ -35,6 +36,7 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o
  /usr/include/c++/14/bits/invoke.h
  /usr/include/c++/14/bits/ios_base.h
  /usr/include/c++/14/bits/istream.tcc
+ /usr/include/c++/14/bits/list.tcc
  /usr/include/c++/14/bits/locale_classes.h
  /usr/include/c++/14/bits/locale_classes.tcc
  /usr/include/c++/14/bits/locale_facets.h
@@ -60,7 +62,9 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o
  /usr/include/c++/14/bits/stl_iterator.h
  /usr/include/c++/14/bits/stl_iterator_base_funcs.h
  /usr/include/c++/14/bits/stl_iterator_base_types.h
+ /usr/include/c++/14/bits/stl_list.h
  /usr/include/c++/14/bits/stl_pair.h
+ /usr/include/c++/14/bits/stream_iterator.h
  /usr/include/c++/14/bits/streambuf.tcc
  /usr/include/c++/14/bits/streambuf_iterator.h
  /usr/include/c++/14/bits/string_view.tcc
@@ -82,6 +86,7 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o
  /usr/include/c++/14/debug/assertions.h
  /usr/include/c++/14/debug/debug.h
  /usr/include/c++/14/exception
+ /usr/include/c++/14/ext/aligned_buffer.h
  /usr/include/c++/14/ext/alloc_traits.h
  /usr/include/c++/14/ext/atomicity.h
  /usr/include/c++/14/ext/numeric_traits.h
@@ -93,6 +98,8 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o
  /usr/include/c++/14/iosfwd
  /usr/include/c++/14/iostream
  /usr/include/c++/14/istream
+ /usr/include/c++/14/iterator
+ /usr/include/c++/14/list
  /usr/include/c++/14/new
  /usr/include/c++/14/ostream
  /usr/include/c++/14/pstl/pstl_config.h

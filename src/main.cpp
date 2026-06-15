@@ -1,129 +1,100 @@
 #include <cstring>
 #include <iostream>
-#include <string>
 #include <fstream>
+#include <iterator>
+#include <list>
+#include <string>
 
 using namespace std;
 
 struct Task {
     char cont[128];
+
+    bool operator==(const Task &task) {
+        if (strcmp(cont, task.cont)) return false;
+        else return true;
+    }
 };
 
-class Todo {
+class TodoApp {
+    list<Task> taskList;
     public:
-        string cont;
-        Todo* next;
-        Todo() {
-            cout<<"Enter Todo: ";
-            getline(cin, this->cont);
-        }
-        Todo(const string task) {
-            this->cont = task;
-        }
-        Todo(Task &task) {
-            this->cont = task.cont;
-        }
-};
-
-class TodoFile {
-    Todo* head;
-    Todo* curr;
-    Todo* last;
-    public:
-        TodoFile() : head(nullptr), curr(nullptr), last(nullptr) {
-            last = head;
-            curr = head;
+        TodoApp(): taskList(){
             readFile();
         }
-        void readFile(const char* filename = "../testing/data.dat") {
-            ifstream file(filename, ios::in|ios::binary);
+        void readFile(const string filepath = "../testing/data.dat") {
+            ifstream file(filepath, ios::in|ios::binary);
             if (file.is_open()) {
                 Task temp;
-                curr = head;
-                while (file.read(reinterpret_cast<char*>(&temp), sizeof(temp))) {
-                    curr = new Todo(temp);
-                    curr = curr->next;
+                while(file.read(reinterpret_cast<char*>(&temp), sizeof(Task))) {
+                    taskList.push_back(temp);
                 }
-                last = curr;
+                file.close();
             } else {
-                cerr<<"Error reading file, file does not exist!";
+                cerr<<"Error Reading file!";
             }
-            file.close();
         }
-        void saveToFile(const char* filename = "../testing/data.dat") {
-            ofstream file(filename, ios::out|ios::binary);
+        void saveToFile(const string filepath = "../testing/data.dat") {
+            ofstream file(filepath, ios::out|ios::binary);
             if (file.is_open()) {
-                curr = head;
-                while (curr!=nullptr) {
-                    Task temp;
-                    strcpy(temp.cont, curr->cont.c_str());
-                    file.write(reinterpret_cast<char*>(&temp), sizeof(temp));
-                    curr = curr->next;
+                for (auto iter:taskList) {
+                    file.write(reinterpret_cast<char*>(&iter), sizeof(Task));
                 }
+                file.close();
             } else {
-                cerr<<"File opening for writing failed!";
+                cerr<<"Error Writing to file!";
             }
-            file.close();
         }
-        void addTodo(const char* todo) {
-            if (head==nullptr) {
-                head = new Todo;
-                last = head;
+        void addTodo() {
+            string cont;
+            cout<<"Enter Task: ";
+            getline(cin, cont);
+            Task temp;
+            strcpy(temp.cont, cont.c_str());
+            taskList.push_back(temp);
+
+            saveToFile();
+            // this->display();
+        }
+        void addTodo(const char* cont) {
+            Task temp;
+            strcpy(temp.cont, cont);
+            taskList.push_back(temp);
+
+            saveToFile();
+            // this->display();
+        }
+        void remTodo(const char* cont) {
+            for (auto iter:taskList) {
+                if (!strcmp(cont, iter.cont)) taskList.remove(iter);
             }
-            last->next = new Todo(todo);
-            last = last->next;
+
+            saveToFile();
+            // this->display();
         }
-        // void addTodo() {
-        //     if (head == nullptr) {
-        //         head = new Todo;
-        //         last = head;
-        //     }
-        //     last->next = new Todo;
-        //     last=last->next;
-        //     cout<<"Enter Task: ";
-        //     getline(cin, last->cont);
-        // }
-        void remTodo(const string todo) {
-            curr = head;
-            Todo* prev;
-            while (curr!=NULL) {
-                if (!strcmp(todo.c_str(), curr->cont.c_str())) {
-                    if (curr==head) {
-                        head = head->next;
-                        delete curr;
-                    } else if (curr==last) {
-                        last = prev;
-                        delete curr;
-                        last->next = nullptr;
-                    } else {
-                        prev->next = curr->next;
-                        delete curr;
-                    }
-                    break;
-                } else {
-                    prev = curr;
-                    curr = curr->next;
-                }
+        void remTodo(const int index) {
+            if (index<=taskList.size()&&index>=0) {
+                auto iter = taskList.begin();
+                advance(iter, index-1);
+                taskList.erase(iter);
+
+                saveToFile();
+                // this->display();
+            } else {
+                cerr<<"Invalid index!"<<endl;
             }
         }
         void display() {
-            curr = head;
             int count=1;
-            while (curr!=NULL) {
-                cout<<count<<": "<<curr->cont<<endl;
-                curr = curr->next;
+            for (auto iter:taskList) {
+                cout<<count<<": "<<iter.cont<<endl;
                 count++;
             }
         }
 };
 
 int main() {
-    TodoFile file;
-    file.addTodo("Create something");
-    // file.addTodo("Something is to be done");
-    // file.saveToFile();
-    // file.readFile();
-    file.display();
+    TodoApp app;
 
-    return 0;
+    return 1;
 }

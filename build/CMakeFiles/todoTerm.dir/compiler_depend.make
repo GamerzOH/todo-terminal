@@ -12,6 +12,7 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o: /mnt/c/Users/Shreyo\ Pal/Documents/Codin
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
+  /usr/include/c++/14/bits/allocated_ptr.h \
   /usr/include/c++/14/bits/allocator.h \
   /usr/include/c++/14/bits/basic_ios.h \
   /usr/include/c++/14/bits/basic_ios.tcc \
@@ -34,6 +35,7 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o: /mnt/c/Users/Shreyo\ Pal/Documents/Codin
   /usr/include/c++/14/bits/invoke.h \
   /usr/include/c++/14/bits/ios_base.h \
   /usr/include/c++/14/bits/istream.tcc \
+  /usr/include/c++/14/bits/list.tcc \
   /usr/include/c++/14/bits/locale_classes.h \
   /usr/include/c++/14/bits/locale_classes.tcc \
   /usr/include/c++/14/bits/locale_facets.h \
@@ -59,7 +61,9 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o: /mnt/c/Users/Shreyo\ Pal/Documents/Codin
   /usr/include/c++/14/bits/stl_iterator.h \
   /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14/bits/stl_list.h \
   /usr/include/c++/14/bits/stl_pair.h \
+  /usr/include/c++/14/bits/stream_iterator.h \
   /usr/include/c++/14/bits/streambuf.tcc \
   /usr/include/c++/14/bits/streambuf_iterator.h \
   /usr/include/c++/14/bits/string_view.tcc \
@@ -81,6 +85,7 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o: /mnt/c/Users/Shreyo\ Pal/Documents/Codin
   /usr/include/c++/14/debug/assertions.h \
   /usr/include/c++/14/debug/debug.h \
   /usr/include/c++/14/exception \
+  /usr/include/c++/14/ext/aligned_buffer.h \
   /usr/include/c++/14/ext/alloc_traits.h \
   /usr/include/c++/14/ext/atomicity.h \
   /usr/include/c++/14/ext/numeric_traits.h \
@@ -92,6 +97,8 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o: /mnt/c/Users/Shreyo\ Pal/Documents/Codin
   /usr/include/c++/14/iosfwd \
   /usr/include/c++/14/iostream \
   /usr/include/c++/14/istream \
+  /usr/include/c++/14/iterator \
+  /usr/include/c++/14/list \
   /usr/include/c++/14/new \
   /usr/include/c++/14/ostream \
   /usr/include/c++/14/pstl/pstl_config.h \
@@ -363,11 +370,17 @@ todoTerm: /lib/x86_64-linux-gnu/libc.so.6 \
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/c++/14/bits/stl_iterator_base_types.h:
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/wctype.h:
+
+/usr/include/wchar.h:
+
+/usr/include/time.h:
 
 /usr/include/c++/14/bits/refwrap.h:
 
@@ -403,13 +416,15 @@ todoTerm: /lib/x86_64-linux-gnu/libc.so.6 \
 
 /usr/include/c++/14/bits/locale_classes.h:
 
+/usr/include/c++/14/bits/list.tcc:
+
+/usr/include/c++/14/fstream:
+
 /usr/include/c++/14/bits/ostream_insert.h:
 
 /usr/include/c++/14/bits/istream.tcc:
 
 /usr/include/c++/14/bits/codecvt.h:
-
-/usr/include/wchar.h:
 
 /usr/include/c++/14/bits/ios_base.h:
 
@@ -421,9 +436,9 @@ todoTerm: /lib/x86_64-linux-gnu/libc.so.6 \
 
 /usr/include/c++/14/bits/invoke.h:
 
-/usr/include/c++/14/fstream:
+/usr/include/c++/14/bits/functional_hash.h:
 
-/usr/include/c++/14/bits/basic_ios.h:
+/usr/include/c++/14/ext/atomicity.h:
 
 /usr/lib/linux/uapi/x86/asm/types.h:
 
@@ -449,9 +464,11 @@ todoTerm: /lib/x86_64-linux-gnu/libc.so.6 \
 
 /usr/include/c++/14/bit:
 
+/usr/include/c++/14/bits/basic_ios.h:
+
 /usr/include/asm-generic/bitsperlong.h:
 
-/usr/include/features.h:
+/usr/include/c++/14/bits/allocated_ptr.h:
 
 /usr/include/alloca.h:
 
@@ -465,6 +482,8 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 
 /usr/include/c++/14/bits/nested_exception.h:
 
+/usr/include/c++/14/list:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/c++/14/bits/basic_ios.tcc:
@@ -472,18 +491,6 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 /usr/include/c++/14/bits/alloc_traits.h:
 
 /usr/include/c++/14/bits/basic_string.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/c++/14/bits/stl_pair.h:
-
-/usr/include/c++/14/bits/locale_facets.tcc:
-
-/usr/include/stdio.h:
 
 /lib/x86_64-linux-gnu/libmvec.so.1:
 
@@ -504,10 +511,6 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 /usr/include/c++/14/bits/concept_check.h:
 
 /usr/include/c++/14/bits/cpp_type_traits.h:
-
-/usr/include/c++/14/bits/functional_hash.h:
-
-/usr/include/c++/14/ext/atomicity.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -536,6 +539,28 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/c++/14/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/14/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/14/bits/stl_list.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/14/bits/stl_pair.h:
+
+/usr/include/c++/14/bits/locale_facets.tcc:
+
+/usr/include/stdio.h:
+
+/usr/include/c++/14/bits/stream_iterator.h:
 
 /usr/include/c++/14/bits/streambuf_iterator.h:
 
@@ -603,11 +628,25 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 
 /usr/include/linux/sched/types.h:
 
+/usr/include/features.h:
+
+/usr/include/c++/14/iterator:
+
+/usr/include/features-time64.h:
+
 /usr/include/c++/14/bits/basic_string.tcc:
 
 /usr/include/c++/14/clocale:
 
 /usr/include/c++/14/ostream:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/c++/14/bits/std_abs.h:
+
+/usr/include/c++/14/pstl/pstl_config.h:
 
 /usr/include/c++/14/bits/charconv.h:
 
@@ -633,13 +672,13 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 
 /usr/include/endian.h:
 
-/usr/include/features-time64.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so:
 
 /usr/include/c++/14/bits/locale_classes.tcc:
 
 /usr/include/linux/posix_types.h:
+
+/usr/include/c++/14/ext/aligned_buffer.h:
 
 /usr/include/c++/14/new:
 
@@ -653,14 +692,6 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 
 /usr/include/string.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/c++/14/bits/std_abs.h:
-
-/usr/include/c++/14/pstl/pstl_config.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/c++/14/bits/requires_hosted.h:
@@ -668,13 +699,3 @@ CMakeFiles/todoTerm.dir/src/main.cpp.o:
 /usr/include/c++/14/iostream:
 
 /usr/include/strings.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/wctype.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
